@@ -1,0 +1,22 @@
+---
+- name: install and configure httpd
+  hosts: all
+  remote_user: ec2-user
+  become: yes
+
+  tasks: 
+  - name: install httpd
+    yum: name=httpd state=latest
+
+  - name: service httpd start
+    service: name=httpd state=started
+
+  - name: service httpd restart
+    service: name=httpd state=restarted
+
+  - name: service httpd stop
+    service: name=httpd state=stopped
+
+  - name: remove httpd
+    service: name=httpd state=absent
+

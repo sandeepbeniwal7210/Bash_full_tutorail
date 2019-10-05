@@ -1,0 +1,21 @@
+---
+- name: install and configure mysql
+  hosts: testServer
+  remote_user: ec2-user
+  become: yes
+
+  tasks: 
+  - name: install mysql
+    yum: name=mysql-server state=latest
+
+  - name: service mysql start
+    service: name=mysqld state=started
+
+  - name: service mysql restart
+    service: name=mysqld state=restarted
+
+  - name: service mysql stop
+    service: name=mysqld state=stopped 
+
+  - name: remove mysql
+    yum : name=mysqld state=absent

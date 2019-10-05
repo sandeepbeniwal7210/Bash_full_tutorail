@@ -1,0 +1,500 @@
+   57  cd ECHO/
+   58  ls
+   59  cd ..
+   60  ls
+   61  cd while_loop/
+   62  ls
+   63  cat while_use.sh 
+   64  ls
+   65  cat sd.sh 
+   66  ls
+   67  cat while.sh 
+   68  ls
+   69  cd ..
+   70  ls
+   71  cd number_calculus/
+   72  ls
+   73  cat temp.sh 
+   74  cat temp1.sh 
+   75  ls
+   76  cd ..
+   77  ls
+   78  clear
+   79  ls
+   80  cd if_statment/
+   81  ls
+   82  cd control_oprator.sh 
+   83  cat control_oprator.sh 
+   84  cat ctrl_opr.sh 
+   85  cat el
+   86  clear
+   87  ls
+   88  cat elif.sh 
+   89  cat sub_ctrl.sh 
+   90  cat control_oprator.sh 
+   91  cat ctrl_opr.sh 
+   92  ls
+   93  cd ..
+   94  ls
+   95  clear
+   96  ls
+   97  cd ..
+   98  ls
+   99  cd bash_project/
+  100  ls
+  101  celar
+  102  clear
+  103  ls
+  104  cat array.sh 
+  105  ls
+  106  cat default_var.sh 
+  107  cat even.sh 
+  108  ls
+  109  cat sd.xml 
+  110  ls
+  111  cat temp.sh 
+  112  cat tmp.sh 
+  113  cat xml_read.sh 
+  114  ls
+  115  cat cmd_xml.txt 
+  116  ls
+  117  clear
+  118  ls
+  119  cd ..
+  120  clear
+  121  ls
+  122  cd -
+  123  ls
+  124  clear
+  125  ls
+  126  find -name sd.xml
+  127  cd ..
+  128  find -name sd.xml
+  129  cd ..
+  130  ls
+  131  cd Documents/
+  132  ls
+  133  cd bash_project/
+  134  ls
+  135  clear
+  136  ls
+  137  find -type f -name sd.sh
+  138  find -type d -name sd.sh
+  139  find -type f -name *.sh
+  140  find -type f -name "*.sh"
+  141  find -type f -name '*.sh'
+  142  find -type f -name 'sd.*'
+  143  find -type f -name 'sd.??"
+  144  find -type f -name 'sd.??'
+  145  find -name '*.exe'
+  146  find -type f -name '*.exe'
+  147  find -name '*.sh'
+  148  ls
+  149  find -name 'st[ud]t.xml'
+  150  find -name 'st[ud]d.xml'
+  151  find -name 'st[ud]dent.xml'
+  152  find -name '*.sh -"s"
+  153  '
+  154  find -name *.sh
+  155  find -name *.sh 's'
+  156  clear
+  157  find -name "*.sh . sd"
+  158  find -name "*.sh . sd"
+  159  find -name "*.sh . '*sd*'"
+  160  find -name "*.sh" "."
+  161  find -name "*.sh" -"./"
+  162  find -name "*.sh" -"../"
+  163  find /tmp -type f -name ".*"
+  164  find . -type f -name ".*"
+  165  find / -mtime 50
+  166  find . -mtime 50
+  167  find / -mtime 50
+  168  find / -atime 50
+  169  find / -m time 50
+  170  find / -mtime 50
+  171  clear
+  172  find -mtime -50
+  173  find -atime -50
+  174  find / -mtime -mtime -100
+  175  find / -mtime -50 -mtime -100
+  176  find / -size 50M
+  177  find / -size -50M
+  178  find / -size +50M
+  179  seq 1 1000000000 > value
+  180  ls
+  181  cat value 
+  182  ls -l
+  183  clear
+  184  ls
+  185  find / -size +100
+  186  find / -size +1000
+  187  find / -size +10000
+  188  find / -size +2G
+  189  find / -size +100000
+  190  find / -size +100000M
+  191  ls
+  192  ls
+  193  mkdir pr
+  194  cd pr
+  195  ls
+  196  seq 1 10000 > value
+  197  ls -l
+  198  find . -size +10
+  199  find . -size +100
+  200  find . -size +10M
+  201  find . -size +10
+  202  find . -size +10 rm -rf {}
+  203  find . -size +10 rm -rf {} \;
+  204  find . -size +100 rm -rf {} \;
+  205  find . -size +100M rm -rf {} \;
+  206  ls
+  207  find . -size +100M rm -rf
+  208  find -type f -name "*" rm -rf
+  209  find . -size +10 rm -rf
+  210  find . -size +10
+  211  find / -size +10M 
+  212  find . -size +10M 
+  213  find . -size +10 
+  214  find . -size +10 rm -rf
+  215  find . -size +10 -exec rm -rf
+  216  find . -size +10 -* rm -rf
+  217  find . -size +10 * rm -rf
+  218  mv value value.sh
+  219  find . -size +10 -sh rm -rf
+  220  find . -size +10 -.sh rm -rf
+  221  clear
+  222  find . -size +10 -.sh rm -rf {}
+  223  find . -size +10  rm -rf {}
+  224  find . -size +10  rm -rf {value}
+  225  find . -size +10  rm -rf {value} /;
+  226  find . -size +10  rm -rf *.sh
+  227  clear
+  228  ls
+  229  clear
+  230  ls
+  231  cd ..
+  232  ls
+  233  cd project_learn/
+  234  ls
+  235  cd ..
+  236  ls
+  237  cear
+  238  clear
+  239  ls
+  240  cd developer/
+  241  ls
+  242  cd for_loop/
+  243  ls
+  244  clera
+  245  clear
+  246  ls
+  247  cat for
+  248  cat for.sh 
+  249  clear
+  250  ls
+  251  cd ..
+  252  ls
+  253  cd if_statment/
+  254  ls
+  255  cd ..
+  256  ls
+  257  cd ECHO/
+  258  ls
+  259  cd ..
+  260  ls
+  261  cd ..
+  262  ls
+  263  cd project_learn/
+  264  ls
+  265  cd ..
+  266  ls
+  267  cd bash_project/
+  268  ls
+  269  cd table_2_10.sh 
+  270  cat table_2_10.sh 
+  271  ls
+  272  cat table_2_10.sh 
+  273  ls
+  274  ls
+  275  cat vertical.sh 
+  276  cat temp.sh 
+  277  vils
+  278  clear
+  279  ls
+  280  cat flag.sh 
+  281  clear
+  282  ls
+  283  cat temp.sh 
+  284  cat tmp.sh 
+  285  ls
+  286  cat default_var.sh 
+  287  bash default_var.sh sandeep
+  288  bash default_var.sh sandeep kunika
+  289  cat default_var.sh 
+  290  ls
+  291  cat array.sh 
+  292  ls
+  293  bash array.sh 
+  294  vim array.sh 
+  295  bash array.sh 
+  296  vim array.sh 
+  297  bash array.sh 
+  298  vim array.sh 
+  299  bash array.sh 
+  300  vim array.sh 
+  301  bash array.sh 
+  302  vim array.sh 
+  303  bash array.sh 
+  304  vim array.sh 
+  305  bash array.sh 
+  306  vim array.sh 
+  307  bash array.sh 
+  308  vim aer
+  309  vim array.sh 
+  310  bash array.sh 
+  311  ls
+  312  clear
+  313  ls
+  314  vim sd.sh
+  315  bash sd.sh 
+  316  vim sd.sh 
+  317  bash sd.sh 
+  318  vim sd.sh 
+  319  bash sd.sh 
+  320  vim sd.sh 
+  321  bash sd.sh 
+  322  vim sd.sh 
+  323  bash sd.sh 
+  324  vim sd.sh 
+  325  bash sd.sh 
+  326  vim sd.
+  327  vim sd.sh 
+  328  bash sd.sh 
+  329  vim sd.sh 
+  330  bash sd.sh 
+  331  vim sd.sh 
+  332  bash sd.sh 
+  333  vim sd.sh 
+  334  bash sd.sh 
+  335  vim sd.s
+  336  vim sd.sh 
+  337  bash sd.sh 
+  338  vim sd.sh 
+  339  clear
+  340  clear
+  341  ls
+  342  ls
+  343  bash array.sh 
+  344  clear
+  345  ls
+  346  cd pr
+  347  ls
+  348  clear
+  349  cd ..
+  350  find -name pr
+  351  find ../.. -name kunika
+  352  ls
+  353  find ../.. -name kunika
+  354  cd ..
+  355  ;s
+  356  ls
+  357  find -name kunika
+  358  find -name sd.sh
+  359  clear
+  360  find . -name "sd.??"
+  361  find . -name "*.sh"
+  362  find . -name "*.php"
+  363  find . -name "*.??"
+  364  clear
+  365  find -name "s[d].sh"
+  366  find -name "s[d].??"
+  367  find . -name "*.sh" -not -path "./kunika/*
+  368  :
+  369  find . -name "*.sh" -not -path "./kunika/*"
+  370  find  -name "*.sh" -not -path "./kunika/*"
+  371  ls
+  372  find -name "*.sh" -not -path "./kunika/*"
+  373  ls
+  374  find -name "*.sh" -not -path "./bash_project/*" 
+  375  find -name "*.sh" "./bash_project/*" 
+  376  find -name "*.sh" -not "./bash_project/*" 
+  377  find -name "*.sh" -path "./bash_project/*" 
+  378  find -name "*.sh" -path "./bash_project/" 
+  379  find -name "*.sh" -path "./bash_project/*" 
+  380  find -name "*.sh" -not -path "./bash_project/*" 
+  381  find -name "*.sh"  -path "./bash_project/*" 
+  382  find . -name "*.sh"  -path "./bash_project/*" 
+  383  clear
+  384  find / -name "*.??" . "./bash_project/*"
+  385  find / -name "*.??" -path "./bash_project/*"
+  386  find / -name "*.sh" -path "./bash_project/*"
+  387  find ./ -name "*.sh" -path "./bash_project/*"
+  388  clear
+  389  find -name kunika
+  390  find -name "*.sh"
+  391  find -name "*.??"
+  392  find -name "*.sh"
+  393  find . -name "sd.??"
+  394  find . -name "*.sh"
+  395  find . -name "*.sh"
+  396  find . -name "s[adff]n.sh"
+  397  find ./ -name *.sh -not -path "*s"
+  398  find ./ -name *.sh -not -path "*b"
+  399  find ./ -name *.sh -path "*b"
+  400  find ./ -name *.sh -path "*s"
+  401  find ./ -name *.sh -path "*xyz*"
+  402  find ./ -name *.sh -path "*s*"
+  403  find ./ -name *.sh -path "*s*"
+  404  find ./ -name *.sh -path "*b*"
+  405  find ./ -name "*.sh" -path "*b*"
+  406  find ./ -name *.sh -path "*b*"
+  407  find ./ -name *.sh -and -not -path "*b*"
+  408  clear
+  409  ls
+  410  find . -name *.sh -path "*as*"
+  411  find . -name *.sh -and -not -path "*as*"
+  412  find . -name *.bash -path "*as*"
+  413  find . -name *.bash -not -path "*as*"
+  414  find . -name *.bash -and -not -path "*as*"
+  415  celar
+  416  clear
+  417  ls
+  418  find / -type d -name kunika
+  419  find . -type d -name kunika
+  420  find / -type d -name "*"
+  421  find / -type d -name "*.??"
+  422  clear
+  423  ls
+  424  find / -type d -name "*.??"
+  425  find . -type d kunika
+  426  find . -type d -name kunika
+  427  ls
+  428  cd ..
+  429  ls
+  430  clear
+  431  find . -type d -name kunika
+  432  find . -type f -name "sd.??"
+  433  find / -type f -name "sd.sh"
+  434  celar
+  435  ls
+  436  clear
+  437  find . -type f -name "sd.??"
+  438  find . -type f -perm 
+  439  find . -type f -perm 777
+  440  find . -type f -perm -777
+  441  find . -type f -perm 0777
+  442  ls l
+  443  ls -l
+  444  find . -type f -perm 0777 -print
+  445  cd bash_project/
+  446  find . -type f -perm 0777 -print
+  447  find . -type f -perm 0777
+  448  LS -l
+  449  find . -type f -perm 0775
+  450  ls
+  451  ls -l
+  452  clera
+  453  clear
+  454  ls
+  455  chmod 777 array.sh 
+  456  ls -l
+  457  chmod 555 array.sh 
+  458  ls -l
+  459  chmod 555 array.sh 
+  460  find . -type f -perm 555
+  461  find . -type f -perm 555 -print
+  462  find . -type f -perm 0555 -print
+  463  find . -type f -perm 0555 
+  464  find -type f -perm 0555 
+  465  find -type f -perm 555 
+  466  find -type f ! -perm 555 
+  467  find -type f -perm 555 
+  468  chmod 555 array.sh 
+  469  find -type f -perm 555 
+  470  find . -type f -perm 555 
+  471  ls -l
+  472  ls
+  473  chmod 555 array.sh pr even.sh 
+  474  ls -l
+  475  find . -type f -perm 555
+  476  clear
+  477  find . -perm u=s
+  478  find . -perm /u=s
+  479  chmod 2644 pr
+  480  ls -l
+  481  clear
+  482  find . -perm u=s
+  483  ls -l
+  484  clear
+  485  find . -perm /u=s
+  486  find . -perm u=s
+  487  ls -l
+  488  ls -l
+  489  chmod 2644 pr
+  490  ls -l
+  491  chmod 0644 pr
+  492  ls -l
+  493  chmod -777 pr
+  494  ls -l
+  495  chmod -555 pr/
+  496  ls -l
+  497  chmod 1664 pr
+  498  ls -l
+  499  chmod 777 array.sh 
+  500  ls -l
+  501  ls
+  502  cd ..
+  503  ls
+  504  cd bash_project/
+  505  ls
+  506  clear
+  507  ls
+  508  sed 's/<*>//g' book_catalogue.xml 
+  509  echo '<sandeep>' | sed 's/<*>//g'
+  510  echo '<sandeep<>' | sed 's/<*>//g'
+  511  echo '<sandeep<<<<<>' | sed 's/<*>//g'
+  512  echo 'abacadxyz' | sed 's/a*x//g'
+  513  echo 'abacadaxyz' | sed 's/a*x//g'
+  514  echo 'abacadaxyz' | sed 's/[a-z]*x//g'
+  515  echo 'aaabbbac' | sed 's/a*//g'
+  516  echo 'aaabbbac' | sed 's/a*c//g'
+  517  echo 'aaabbbac' | sed 's/a.b//g'
+  518  echo 'aaabbbacb' | sed 's/a.b//g'
+  519  echo 'aaxbbbacb' | sed 's/a.b//g'
+  520  echo 'aaxbbbaxb' | sed 's/a.b//g'
+  521  echo 'sandeep,sandi,sandu,beniwal' | sed 's/sand.*,//g'
+  522  echo 'sandeep,sandi,vivek,sandu,beniwal' | sed 's/sand.*,//g'
+  523  echo 'sandeep,sandi,vivek,sandu,beniwal' | sed 's/sand.*[^,]//g'
+  524  echo 'sandeep,sandi,vivek,sandu,beniwal' | sed 's/sand.*[^,][a-z]//g'
+  525  echo 'sandeep,sandi,vivek,sandu,beniwal' | sed 's/sand.*,[^sand]//g'
+  526  echo 'sandeep,sandi,vivek,sandu,beniwal' | sed 's/sand{0,3},//g'
+  527  echo 'sandeep,sandi,vivek,sandu,beniwal' | sed 's/sand{0,3}//g'
+  528  echo 'sandeep,sandi,vivek,sandu,beniwal' | sed 's/sand.{0,3},//g'
+  529  echo 'sandeep,sandi,vivek,sandu,beniwal' | sed 's/sand.{0,3}//g'
+  530  echo 'sandeep,sandi,vivek,sandu,beniwal' | sed 's/sand[a-z]{0,3}//g'
+  531  echo 'sandeep,sandi,vivek,sandu,beniwal' | sed 's/sand[a-z]{0,3},//g'
+  532  echo 'sandeep,sandi,vivek,sandu,beniwal' | sed 's/sand[a-z]{0,3}//g'
+  533  echo 'sandeep,sandi,vivek,sandu,beniwal' | sed -e 's/sand[a-z]{0,3}//g'
+  534  echo '<sandeep>' | sed 's/<[^>]*>//'
+  535  echo '<sandeep>beniwal</sandeep>' | sed 's/<[^>]*>//'
+  536  echo '<sandeep>beniwal</sandeep>' | sed 's/<[^>]*>//g'
+  537  c sed 's/<[^>]*>//g'
+  538  sed 's/<[^>]*>//g' book_catalogue.xml 
+  539  sed 's/<[^>]*>//g' book_catalogue.xml | sed '='
+  540  sed -n '/title/p' book_catalogue.xml 
+  541  sed -n '/title/p' book_catalogue.xml | sed 's/<[^>]*>//g'
+  542  sed -n '/title/p' book_catalogue.xml | sed 's/<[^>]*>//g' | grep -n 
+  543  sed -n '/title/p' book_catalogue.xml | sed 's/<[^>]*>//g' | grep -n * 
+  544  sed -n '/title/p' book_catalogue.xml | sed 's/<[^>]*>//g' | grep -n "*" 
+  545* sed -n '/title/p' book_catalogue.xml | sed 's/<[^>]*>//g' | grep -n '*' 
+  546  grep -n 'title' book_catalogue.xml | sed 's/<[^>]*>//g'
+  547  grep 'title' book_catalogue.xml | grep -n title | sed 's/<[^>]*>//g'
+  548  grep 'title' book_catalogue.xml | grep -n title | sed 's/<[^>]*>//g' | tr -d "\t"
+  549  grep 'title' book_catalogue.xml | grep -n title | sed 's/<[^>]*>//g' | tr -d " "
+  550  grep 'title' book_catalogue.xml | grep -n title | sed 's/[^ ]<[^>]*>//g' |
+  551  grep 'title' book_catalogue.xml | grep -n title | sed 's/[^ ]<[^>]*>//g' 
+  552  grep 'title' book_catalogue.xml | grep -n title | sed 's/[^ *]<[^>]*>//g' 
+  553  grep 'title' book_catalogue.xml | grep -n title | sed 's/[^ ]*<[^>]*>//g' 
+  554  grep 'title' book_catalogue.xml | grep -n title | sed 's/[ ]*<[^>]*>//g' 
+  555  ls
+  556  history > sed

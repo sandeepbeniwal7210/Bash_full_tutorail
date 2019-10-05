@@ -1,0 +1,105 @@
+Last cmd 
+	!! 
+Specific last cmd
+	!ls		#run last ls cmd with same arguments
+============================================================
+Redirection - stdout
+echo "Sandeep Beniwal" > file.out
+Append
+echo "Sandeep Beniwal" >> file.out
+Stderr
+cd nodir 2> error.out
+Stdout - stderr
+ls docs/ nodir > file.out 2> error.out
+Both stderr stdout to same file
+	 ls docs/ nodir > file_error.out 2>&1
+Shorthand	 
+	 ls docs/ nodir &> file_error.out
+Suppressing error msg
+	ls docs/ nodir 2> /dev/null
+Suppressing stdout msg
+	ls docs/ nodir > /dev/null
+Piping stderr
+	 ls docs/ nodir 2>&1 > /dev/null | wc
+Piping stdout
+	 ls docs/ nodir 2>&1 2> /dev/null | wc
+Piping stderr along with stdout
+	ls docs/ nodir 2>&1 | wc
+==============================================================
+	Redirection stdin
+	 wc < file.out
+Using block as stdin
+	 wc << EOF
+	sandeep
+	beniwal
+	kutani
+	EOF
+Stdin with block to stdout 	
+	grep name << EOF > file.out
+name - sandeep
+vill - kutani
+name - vivek
+vill - kutani
+EOF
+Stdin with block and piping
+grep name << EOF | wc
+name - sandeep
+vill - kutani
+name - vivek
+vill - kutani
+EOF
+================================================================
+Running command without waiting for completion
+	<command> &
+	sleep 10 &
+Debug mode 
+	bash -x script.sh
+	+ A=5					#command 
+	+ B=7
+	+ echo A is 5			#command
+	A is 5					#output
+	+ echo B is 7
+	B is 7
+Debug mode
+	bash -v  script.sh
+	A=5
+	B=7
+	echo A is $A
+	A is 5
+	echo B is $B
+	B is 7
+Check syntax error
+	 bash -n script.sh
+=================================================================	 
+Control statement	 
+	cd nodir;rm *			#Run both command in any condition
+	cd nodir && rm *		#Run 2nd command only if 1st command is successful
+	cd nodir || echo msg	#Run 2nd command only if 1st command is failed
+###
+	ls -l && echo yes && echo yes1 && echo yes2 && cd nodir || echo "last command failed"
+	total 0
+	-rw-r--r-- 1 Sandeep Beniwal 197121 0 Apr 10 08:39 abc
+	-rw-r--r-- 1 Sandeep Beniwal 197121 0 Apr 10 08:39 pqr 
+	drwxr-xr-x 1 Sandeep Beniwal 197121 0 Apr 10 08:37 temp/
+	-rw-r--r-- 1 Sandeep Beniwal 197121 0 Apr 10 08:39 xyz
+	yes
+	yes1
+	yes2
+	yes2
+	bash: cd: nodir: No such file or directory
+	last command failed
+###
+	cd nodir && echo yes && echo yes1 && echo yes2 && cd nodir || echo "last command failed" && ls -l
+	bash: cd: nodir: No such file or directory
+	last command failed
+	total 0
+	-rw-r--r-- 1 Sandeep Beniwal 197121 0 Apr 10 08:39 abc
+	-rw-r--r-- 1 Sandeep Beniwal 197121 0 Apr 10 08:39 pqr
+	drwxr-xr-x 1 Sandeep Beniwal 197121 0 Apr 10 08:37 temp/
+	-rw-r--r-- 1 Sandeep Beniwal 197121 0 Apr 10 08:39 xyz
+### When 1st command is failed than all command run
+	cd nodir || { cd nodir ; ls ; echo msg ; }
+	bash: cd: nodir: No such file or directory
+	bash: cd: nodir: No such file or directory
+	abc  pqr  temp/  xyz
+	msg

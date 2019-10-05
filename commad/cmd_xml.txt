@@ -1,0 +1,500 @@
+   69  cat case.sh 
+   70  clear
+   71  ls -a
+   72  clear
+   73  ls
+   74  cat while_use.sh 
+   75  cd ..
+   76  ls
+   77  cd ../developer/
+   78  ls
+   79  celar
+   80  clear
+   81  ls
+   82  cat for_loop/
+   83  ls
+   84  cd for_loop/
+   85  ls
+   86  cat for_user.sh 
+   87  ls
+   88  celar
+   89  clear
+   90  ls
+   91  cat for.sh 
+   92  cat for_looping.sh 
+   93  cat for_user.sh 
+   94  ls
+   95  cat for_seq.sh 
+   96  celarls
+   97  clear
+   98  ls
+   99  clear
+  100  cat for.sh 
+  101  clearls
+  102  clear
+  103  ls
+  104  cd ..
+  105  ls
+  106  clear
+  107  clear
+  108  ls
+  109  ls
+  110  cd ..
+  111  clera
+  112  clear
+  113  ls
+  114  cd project_learn/
+  115  ls
+  116  cd ..
+  117  clear
+  118  ls
+  119  cd fables/
+  120  s
+  121  ls
+  122  clear
+  123  ls
+  124  cd ..
+  125  ls
+  126  cd zfables/
+  127  ls
+  128  cd ..
+  129  clear
+  130  ls
+  131  cd project
+  132  ls
+  133  cd shell/
+  134  ls
+  135  cd ..
+  136  ls
+  137  clear
+  138  ls
+  139  cd calculate/
+  140  ls
+  141  cd ..
+  142  clear
+  143  ls
+  144  cd perm/
+  145  ls
+  146  cd ..
+  147  lcear
+  148  clear
+  149  ls
+  150  cd second_day/
+  151  ls
+  152  cd ..
+  153  clear
+  154  ls
+  155  cd fourth_day/
+  156  ls
+  157  clear
+  158  ls
+  159  cd ..
+  160  clear
+  161  ls
+  162  cd SANDEEP 
+  163  ls
+  164  clear
+  165  ls
+  166  cd ..
+  167  ls
+  168  clear
+  169  ls
+  170  cd kunika/
+  171  ls
+  172  cd ...
+  173  cd ..
+  174  clear
+  175  ls
+  176  cd git_project/
+  177  ls
+  178  cd ..
+  179  clear
+  180  ls
+  181  cd kunika/
+  182  ls
+  183  cd ..
+  184  clear
+  185  ls
+  186  cd bash_project/
+  187  ls
+  188  cd ..
+  189  clear
+  190  ls
+  191  cd Documents/
+  192  ls
+  193  cd ..
+  194  clear
+  195  ls
+  196  cd fables/
+  197  ls
+  198  cd ..
+  199  clear
+  200  ls
+  201  cd kunika/
+  202  ls
+  203  clear
+  204  ls
+  205  cd ..
+  206  clear
+  207  ls
+  208  cd project
+  209  ls
+  210  grep -Rl linux
+  211  cd while_loop/
+  212  ls
+  213  cat case.sh 
+  214  cd ..
+  215  ls
+  216  cd ..
+  217  clear
+  218  find -type d -name linux.*
+  219  find . -name "linux.???"
+  220  echo "sandeep beniwal"
+  221  echo 'sandeep beniwal'
+  222  var=20
+  223  echo $var 
+  224  echo "sandeep beniwal $var"
+  225  echo "The value of variable $var= "
+  226  echo "The value of variable var=$var"
+  227  echo 'The value of variable var=$var'
+  228  echo -e "The\nvalue\nof\nvariable\nvar=$var"
+  229  echo "sandeep beniwal" > echo.txt
+  230  cat echo.txt 
+  231  echo 'sandeep beniwal' >> echo.txt 
+  232  var=20 >> echo.txt 
+  233  echo $var 
+  234  echo $var >> echo.txt 
+  235  echo "sandeep beniwal $var" >> echo.txt 
+  236  echo "The value of variable var=$var" >> echo.txt 
+  237  echo -e "The\nvalue\nof\nvariable\nvar=$var" >> echo.txt 
+  238  cat echo.txt 
+  239  echo -e "The\nvalue\nof\nvariable\nvar=$var"
+  240  echo -e "the\bvalue\bof\bvarible\b$var"
+  241  echo -e "the \bvalue \bof \bvarible \b$var"
+  242  echo -e "the\tvalue\tof\tvarible\t$var"
+  243  clear
+  244  ls
+  245  clear
+  246  clear
+  247  ls
+  248  clear
+  249  ls
+  250  clear
+  251  name="sandeep beniwal"
+  252  echo $name 
+  253  echo ${name:0:&}
+  254  echo ${name:0:7}
+  255  echo ${name:0}
+  256  echo ${name:0:1}
+  257  echo ${name:0:5}
+  258  echo ${name:4:5}
+  259  echo ${name:4:1}
+  260  echo ${name:4:0}
+  261  echo ${name:}
+  262  echo ${name:0}
+  263  echo ${name:4:0}
+  264  echo ${name:0:*}
+  265  echo ${name:4}
+  266  echo ${name:8:7}
+  267  echo ${#name}
+  268  echo ${name#}
+  269  echo ${name#?}
+  270  echo ${name#???}
+  271  echo ${name#*a}
+  272  echo ${name#*e}
+  273  echo ${name##*e}
+  274  echo ${name##*a}
+  275  echo ${name$*a}
+  276  echo ${name#*a}
+  277  echo ${name##*a}
+  278  echo ${name%a*}
+  279  echo ${name%%a*}
+  280  echo ${name%%??}
+  281  echo ${name%??}
+  282  echo ${name#??}
+  283  echo ${name#?}
+  284  echo ${name#*a}
+  285  echo ${name##*a}
+  286  echo ${name%?}
+  287  echo ${name%??}
+  288  echo ${name%a*}
+  289  echo ${name%%a*}
+  290  echo -e "sandeep\vbeniwal"
+  291  echo -e "sandeep\n\vbeniwal"
+  292  ls
+  293  clear
+  294  cd ..
+  295  ls
+  296  clear
+  297  mkdir sed_cmd
+  298  ls
+  299  cd sed_cmd/
+  300  ls
+  301  clear
+  302  vim linux.txt
+  303  ls
+  304  sed 's/linux/xxxxx'
+  305  sed 's/linux/xxxxx' linux.txt 
+  306  sed 's/linux/xxxxx/' linux.txt 
+  307  clear
+  308  sed 's/linux/xxxxx/' linux.txt 
+  309  cat linux.txt 
+  310  sed 's/linux/xxxxx/' linux.txt 
+  311  sed 's/linux/Ixxxxx/' linux.txt 
+  312  cat linux.txt 
+  313  sed 's/linux/I/xxxxx/' linux.txt 
+  314  sed 's/linux/xxxxx/' linux.txt 
+  315  sed 's/linux/xxxxx/I' linux.txt 
+  316  sed 's/linux/xxxxx/3' linux.txt 
+  317  sed 's/linux/xxxxx/2' linux.txt 
+  318  sed 's/linux/xxxxx/I2' linux.txt 
+  319  sed 's/linux/xxxxx/I3' linux.txt 
+  320  sed 's/linux/xxxxx/Ig' linux.txt 
+  321  sed 's/linux/xxxxx/g' linux.txt 
+  322  sed 's/linux/I/xxxxx/' linux.txt 
+  323  sed 's/linux/I,/xxxxx/' linux.txt 
+  324  celar
+  325  clear
+  326  sed 's/linux/xxxxx/g' linux.txt 
+  327  sed 's/linux/xxxxx/2' linux.txt 
+  328  sed 's/linux/xxxxx/1' linux.txt 
+  329  sed 's/linux/xxxxx/I1' linux.txt 
+  330  sed 's/linux/xxxxx/I2' linux.txt 
+  331  sed 's/linux/xxxxx/g' linux.txt 
+  332  sed 's/linux/xxxxx/Ig' linux.txt 
+  333  sed 's/linux/xxxxx/Igw sd.out' linux.txt 
+  334  ks
+  335  ls
+  336  cat sd.out 
+  337  sed 's/linux/xxxxx/Ip' linux.txt 
+  338  sed -n 's/linux/xxxxx/Ip' linux.txt 
+  339  sed '1s/linux/xxxxx/I' linux.txt 
+  340  sed '2s/linux/xxxxx/I' linux.txt 
+  341  sed '2,8s/linux/xxxxx/I' linux.txt 
+  342  sed '1,3s/linux/xxxxx/I' linux.txt 
+  343  sed '3,$s/linux/xxxxx/I' linux.txt 
+  344  sed '/many/s/linux/xxxxx/I' linux.txt 
+  345  sed '/secured/s/linux/xxxxx/I' linux.txt 
+  346  sed '/secured/s/linux/xxxxx/' linux.txt 
+  347  cat linux.txt 
+  348  vim linux.txt 
+  349  sed '/kunika/Is/linux/xxxxx/' linux.txt 
+  350  sed '/banana/Is/linux/xxxxx/I/
+  351  ' linux.txt
+  352  sed '/banana/Is/linux/xxxxx/I/' linux.txt
+  353  sed '/banana/Is/linux/xxxxx/I/' linux.txt
+  354  sed '/banana/Is/linux/xxxxx/I' linux.txt
+  355  sed '/banana/I,/kumika/Is/linux/xxxxx/I' linux.txt
+  356  sed '/banana/I,/hansika/Is/linux/xxxxx/I' linux.txt
+  357  sed '/system/I,/kunika/Is/linux/xxxxx/I' linux.txt 
+  358  sed '/system/I,/beniwal/Is/linux/xxxxx/I' linux.txt 
+  359  sed '/system/I,/pear/Is/linux/xxxxx/I' linux.txt 
+  360  clear
+  361  ls
+  362  sed '/kunika/s/linux/xxxxx/I' linux.txt 
+  363  sed '/kunika/I,secure/s/linux/xxxxx/I' linux.txt 
+  364  sed '/kunika/I,/secure/s/linux/xxxxx/I' linux.txt 
+  365  sed '/kunika/I,/secure/Is/linux/xxxxx/I' linux.txt 
+  366  sed '1d' linux.txt 
+  367  sed '2d' linux.txt 
+  368  cat linux.txt 
+  369  sed '1d' linux.txt 
+  370  sed '1,3d' linux.txt 
+  371  sed '1,3!d' linux.txt 
+  372  sed '1,$d' linux.txt 
+  373  sed '3,$d' linux.txt 
+  374  sed '1d;$d' linux.txt 
+  375  cat linux.txt 
+  376  sed '2d;$d' linux.txt 
+  377  clear
+  378  ls
+  379  sed '/kunika/d' linux.txt 
+  380  cat linux.txt 
+  381  sed '/secure/Id' linux.txt 
+  382  sed '/kunika/preeti/d' linux.txt 
+  383  sed '/kunika/,/preeti/d' linux.txt 
+  384  cat linux.txt 
+  385  cat linux.txt 
+  386  sed '/kunika/,/preeti/d' linux.txt 
+  387  sed '/m.com/,/sandeep/d' linux.txt 
+  388  cat linux.txt 
+  389  sed '/m.com/,/kunika/d' linux.txt 
+  390  sed '1{/kunika/d;}' linux.txt 
+  391  sed '1{/many/d;}' linux.txt 
+  392  sed '${/and/d}' linux.txt 
+  393  sed '1{/kunika/,free/d;} li
+  394  sed '1{/kunika/,free/d;}' linux.txt 
+  395  sed '1{/most/|ads/d;}' linux.txt 
+  396  sed '1,4{/many/d;}' linux.txt 
+  397  sed '1,4{/linux/Id;}' linux.txt 
+  398  sed '/kunika/{N;d;}' linux.txt 
+  399  cat linux.txt 
+  400  clear
+  401  ls
+  402  clear
+  403  clear
+  404  clear
+  405  ls
+  406  clear
+  407  clear
+  408  sandeep beniwal preeti chahar
+  409  clear
+  410  ls
+  411  clear
+  412  ls
+  413  clear
+  414  ls
+  415  clear
+  416  sed 's/linux/xxxxx/' linux.txt 
+  417  sed 's/linux/xxxxx/I' linux.txt 
+  418  sed 's/linux/xxxxx/Ig' linux.txt 
+  419  sed 's/linux/xxxxx/Igw sd.out' linux.txt 
+  420  ls
+  421  cat sd.out 
+  422  sed 's/linux/xxxxx/Igw sd.out' linux.txt 
+  423  cat sd.out 
+  424  clear
+  425  sed 's/linux/xxxxx/Ip' linux.txt 
+  426  sed -n 's/linux/xxxxx/Ip' linux.txt 
+  427  sed '/kunika/Is/linux/xxxx/I' linux.txt 
+  428  sed '/virus/Is/linux/xxxx/I' linux.txt 
+  429  sed '1s/linux/xxxx/I' linux.txt 
+  430  sed '1,2s/linux/xxxx/I' linux.txt 
+  431  sed '1,5s/linux/xxxx/I' linux.txt 
+  432  sed '1s/linux/xxxx/I' linux.txt 
+  433  sed '1,$s/linux/xxxx/I' linux.txt 
+  434  1sed '4,$s/linux/xxxx/I' linux.txt 
+  435  sed '4,$s/linux/xxxx/I' linux.txt 
+  436  sed '/kunika/I,/beniwal/Is/linux/xxxx/I' linux.txt 
+  437  sed '2,3s/linux/xxxx/I' linux.txt 
+  438  sed '4,6s/linux/xxxxx/I' linux.txt 
+  439  sed '/kunika/I,/GPA/Is/linux/xxxx/I' linux.txt 
+  440  sed '/GPA/I,/kunika/Is/linux/xxxx/I' linux.txt 
+  441  clear
+  442  ls
+  443  sed '3d' linux.txt 
+  444  sed '4d' linux.txt 
+  445  sed '2,4d' linux.txt 
+  446  cat linux.txt 
+  447  sed '2,3!d' linux.txt 
+  448  sed '2,$d' linux.txt 
+  449  sed '4,$d' linux.txt 
+  450  sed '/kunika/d' linux.txt 
+  451  cat linux.txt 
+  452  vim linux.txt 
+  453  cear
+  454  clear
+  455  ls
+  456  sed '4d' linux.txt 
+  457  sed '/scure/d' linux.txt 
+  458  sed '/many/d' linux.txt 
+  459  sed '/free/d' linux.txt 
+  460  clear
+  461  sed '2,$d' linux.txt 
+  462  sed '4,$d' linux.txt 
+  463  sed '/free/I,/most/d' linux.txt 
+  464  cat linux.txt 
+  465  sed '/free/I,/ans/d' linux.txt 
+  466  sed '/like/I,/ans/d' linux.txt 
+  467  sed '/like/I,/ans/Id' linux.txt 
+  468  sed '/most/I,/ans/Id' linux.txt 
+  469  clear
+  470  sed '/kunika/,/Os/d' linux.txt 
+  471  cat linux.txt 
+  472  clear
+  473  sed '1{/kunika/d;}' linux.txt 
+  474  sed '5{/kunika/d;}' linux.txt 
+  475  sed '2{/unix/d;}' linux.txt 
+  476  clear
+  477  ls
+  478  sed '${/unix/d;}' linux.txt 
+  479  sed '${/kunika/d;}' linux.txt 
+  480  sed '1,4{/kunika/d;}' linux.txt 
+  481  sed '1,4{/most/d;}' linux.txt 
+  482  sed '{/kuniak\|/free/d;}' linux.txt 
+  483  sed '{/kuniak/I,/free/d;}' linux.txt 
+  484  sed '1{/system/,/os/d;}' linux.txt 
+  485  sed '1{/update/I,/op/d;}' linux.txt 
+  486  sed '1,4{/os/d;}' linux.txt 
+  487  sed '1,4{/update/,/many/d;}' linux.txt 
+  488  sed '1,4{/update/,/many/d;}' linux.txt 
+  489  sed '3,4{/update/,/many/d;}' linux.txt 
+  490  sed '2,3{/update/,/many/d;}' linux.txt 
+  491  sed '2,4{/update/,/many/d;}' linux.txt 
+  492  sed '1,4{/baised/,/most/d;}' linux.txt 
+  493  sed '1{/update/I,/op/d;}' linux.txt 
+  494  sed '/many/{N;d;}' linux.txt 
+  495  sed '/system/{N;d;}' linux.txt 
+  496  cat linux.txt 
+  497  sed 
+  498  sed '/many/{N;s/\n.*//;}' linux.txt 
+  499  sed '/many/{N;s/\n.*/clear/;}' linux.txt 
+  500  clear
+  501  C ..
+  502  CD ..
+  503  cd ..
+  504  clear
+  505  ls
+  506  cd bash_project/
+  507  ls
+  508  clear
+  509  ls
+  510  cat temp.sh 
+  511  cat default_var.sh 
+  512  vim book_catalog.html
+  513  mv  book_catalog.html book_catalogue.xml 
+  514  vim book_catalogue.xml 
+  515  vim student.xml
+  516  cat book_catalogue.xml 
+  517  vim xml_read.sh
+  518  grep -A "visual studio" book_catalogue.xml 
+  519  grep -A 'visual studio' book_catalogufe.xml 
+  520  grep -A 'visual' book_catalogufe.xml 
+  521  grep -A "visual" book_catalogufe.xml 
+  522  grep -A4 "visual studio" book_catalogue.xml 
+  523  grep -iA4 "visual studio" book_catalogue.xml 
+  524  grep -iA4 "visual studio" book_catalogue.xml | grep -iA4 "title"
+  525  grep -iA5 "visual studio" book_catalogue.xml | grep -iA5 "title"
+  526  vim book_catalogue.xml 
+  527  grep "title" book_catalogue.xml 
+  528  grep "title" book_catalogue.xml | cut -c '1,5' 
+  529  grep "title" book_catalogue.xml | cut -c '1-5' 
+  530  grep "title" book_catalogue.xml | cut -c '5-' 
+  531  grep "title" book_catalogue.xml | cut -c 7-
+  532* grep "title" book_catalogue.xml 
+  533  cut -c 5 book_catalogue.xml 
+  534  grep "title" book_catalogue.xml | grep -v title
+  535  grep "title" book_catalogue.xml | grep -v "title"
+  536  sed 's/title//' book_catalogue.xml 
+  537  sed '/title/s/title//' book_catalogue.xml | 
+  538  sed '/title/s/title//' book_catalogue.xml 
+  539  sed -n '/title/s/title//' book_catalogue.xml 
+  540  sed -np '/title/s/title//' book_catalogue.xml 
+  541  sed -n '/title/s/title//p' book_catalogue.xml 
+  542  sed -n '/title/s/<title>//p' book_catalogue.xml 
+  543  sed -n '#title#s#<title>\|</title>##p' book_catalogue.xml  
+  544  sed -En '#title#s#<title>\|</title>##p' book_catalogue.xml  
+  545  sed -n '/title/s/<title>//p' book_catalogue.xml | sed 's#</title>##' 
+  546  sed -n '/title/s/<title>//p' book_catalogue.xml | sed 's#</title>##' | sed 'i\'
+  547  sed -n '/title/s/<title>//p' book_catalogue.xml | sed 's#</title>##' | sed 'i\1'
+  548  sed -n '/title/s/<title>//p' book_catalogue.xml | sed 's#</title>##' | sed '='
+  549  sed -n '/title/s/<title>//p' book_catalogue.xml | sed 's#</title>##' | sed '=;p'
+  550  sed -n '/title/s/<title>//p' book_catalogue.xml | sed 's#</title>##' | sed -n '=;p'
+  551  sed -n '/title/s/<title>//p' book_catalogue.xml | sed 's#</title>##' | sed -n '='
+  552* sed -n '/title/s/<title>//p' book_catalogue.xml
+  553  sed -n '/title/s/<title>//p' book_catalogue.xml | sed 's#</title>##' | sed '=' | sed '{N;s/\n/./}'
+  554  sed -n '/title/s/<title>//p' book_catalogue.xml | sed 's#</title>##' | sed '=' | sed '{N;s/\n\t/./}'
+  555* sed -n '/title/s/<title>//p' book_catalogue.xml | sed 's#</title>##' | sed '{
+  556  sed -n '/title/s/<title>//p' book_catalogue.xml 
+  557  sed -n '/title/s/<title>//p' book_catalogue.xml | sed 's#</title>##' | sed '=' | sed '{N;s/\n\t/./}'
+  558  sed -n '/title/s/<title>//p' book_catalogue.xml | sed 's#</title>##' | sed '=' | sed '{N;s/\n/./}'
+  559  sed -n '/title/s/<title>//p' book_catalogue.xml | sed 's/\t//' | sed 's#</title>##' | sed '=' | sed '{N;s/\n/./}'
+  560  sed -n '/title/s/<title>//p' book_catalogue.xml | sed 's/^[\t]//' | sed 's#</title>##' | sed '=' | sed '{N;s/\n/./}'
+  561  sed -n '/title/s/<title>//p' book_catalogue.xml | sed 's/^[ \t]//' | sed 's#</title>##' | sed '=' | sed '{N;s/\n/./}'
+  562  sed -n '/title/s/<title>//p' book_catalogue.xml | sed 's/^[ \t]*//' | sed 's#</title>##' | sed '=' | sed '{N;s/\n/./}'
+  563  sed -n '/title/s/<title>//p' book_catalogue.xml | sed 's/^ *//' | sed 's#</title>##' | sed '=' | sed '{N;s/\n/./}'
+  564  history 
+  565  history < cmd_xml.txt
+  566  ls
+  567  touch cmd_xml.txt
+  568  history > cmd_xml.txt 

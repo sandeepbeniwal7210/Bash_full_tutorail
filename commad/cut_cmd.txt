@@ -1,0 +1,32 @@
+#tr command
+
+tr 'a' 'x'                                         #only change a in x 
+tr -s 'i' 'X' or tr 'i' 'X'                        #all i change in X and also repeat i print only one time
+echo "XaaXbbXcccX" | tr -s 'a' 'x'				#only a and when a is repeat than only print one 
+echo "XaaXbbXcccX" | tr -s 'X' 'a'                 #all XaaX is change in one a only and whan chage character 
+ 
+tr -c 'i' 'X'                                      #all characters of string change in X but  not i 
+tr -d 'i'                                          #all i delete in string 
+tr “[:lower:]” “[:upper:]” or tr “[a-z]” “[A-Z]”   #all characters change lowercase to upercase
+tr '[:upper:]' '[:lower:]' or tr '[A-Z]' '[a-z]'   #all characters change upercase to lowercase
+
+ echo "Welcome    To    kunika" or tr -s [:space:] ' ' #to delete more space
+#and substitute character are same and repeat print only one
+ 
+echo "my ID is 73535" or tr -d [:digit:]         #to delete number
+echo "my ID is 73535" or tr -cd [:digit:]        #to delete characters
+   
+   
+#cut command
+cut -c1                                          #to cut only first characters
+cut -c5                                          #to cut only five characters
+cut -c5-                                         #to cut all characters after first 5 characters
+cut -c -5                                        #to cut first five characters
+cut -c 1-5                                       #to cut first to five characters
+cut -c 1-5,9-12                                  #to cut first to five characters and nine to twelve
+
+
+cut -d ' ' -f1                                   #cut before first space  
+cut -d ' ' -f2                                   #cut after first  space
+cut -d ' ' -f2-4                                 #cut second to fourth 
+

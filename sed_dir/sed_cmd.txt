@@ -1,0 +1,76 @@
+
+2. sed 
+# Substitute
+sed 's/pattern/replacement/flags'		
+sed 's/pattern/replacement/'					# Replacing first occurrence in every line
+sed 's/pattern/replacement/I'					# Case insensitive
+sed 's/pattern/replacement/3'					# Replacing 3rd occurrence in every line
+sed 's/pattern/replacement/g'					# Replacing all occurrences
+sed 's/pattern/replacement/p'					# Print a line twice which contains a match
+sed -n 's/pattern/replacement/p'				# Print only those lines which contain a match
+sed 's/pattern/replacement/gw outputfile'		# Print output to a file
+sed '2s/pattern/replacement/flags' 				# Replacing pattern in only 2nd line
+sed '2,3s/pattern/replacement/flags'			# Range of lines from 2 to 3
+sed '2,$s/pattern/replacement/flags'			# Start from a line to the end of the file
+sed '/pattern-1/s/pattern/replacement/flags'	# Starting from a pattern
+sed '/pattern-1/Is/pattern/replacement/flags'	# Pattern-1 Case insensitive
+sed '/pattern-1/,/pattern-2/s/pattern/replacement/flags		# Substitute between two patterns
+sed '/pattern-1/I,/pattern-2/Is/pattern/replacement/flags	# Pattern-1 and pattern-2 case insensitive
+
+# Delete
+sed '2d' 						# Delete 2nd line
+sed '2,3d'						# Range of lines
+sed '2,3!d'						# Except the range
+sed '2,$d'						# Range starting from 2 till last line
+sed '1d;$d'						# Delete fist and last
+sed '/pattern/d'				# Delete line with pattern
+sed '/pattern/Id'				# Case insensitive
+sed '/pattern-1/,/pattern-2/d'	# Delete lines between patterns
+sed '/pattern-1/I,/pattern-2/Id'	# Pattern-1 and pattern-2 case insensitive
+sed '1{/pattern/d;}'			# Delete 1st line if it contains pattern
+sed '${/pattern/d;}'			# Delete last line if it contains pattern
+sed '1{/pattern-1\|pattern-2/d;}'	# Delete fist line if it contains either pattern-1 or pattern-2
+sed '1,4{/pattern/d;}'			# Delete lines from 1 to 4 if any of these contains pattern
+sed '/pattern/{N;d;}'			# Delete line with pattern and next line. (Pattern space contains pattern + next line)
+sed '/pattern/{N;s/\n.*//;}'		# Delete next line to the line with pattern. (\n is new line character)
+
+# Insert,append, and change
+sed 'i\Insert this line'				# Insert line before every line (\ is optional)
+sed '2i\Insert this line'				# Insert line before 2nd line
+sed '$i\Insert this line'				# Insert line before last line
+sed '/pattern/i\Insert this line' 		# Insert line before pattern
+sed '/pattern-1/,/pattern-2/i\Insert this line'	# Insert line starting before pattern-1 till pattern-2
+sed 'a\Append this line'				# Append line after every line
+sed '2a\Append this line'				# Append line after 2nd line
+sed '$a\Append this line'				# Append line after last line
+sed '/pattern/a\Append this line' 		# Append line after pattern
+sed '/pattern-1/,/pattern-2/a\Append this line'	# Append line starting after pattern-1 till pattern-2
+sed 'c\Change the line'					# Replace every line
+sed '3c\Change the line'				# Change 3rd line with thisTransform
+sed 'y/character-set/new-character-set/' # Transform characters like tr command
+
+# Line numbers
+sed '='									# Print line number before every line
+sed '/pattern/='						# Print line number before pattern
+
+# Read
+sed 'r read_file.txt'					# Print data from file after each line
+sed '2r read_file.txt' 					# Print data from file after 2nd line
+sed '/pattern/r read_file.txt'			# Print data from file after pattern
+sed 's#pattern##'                       #if pattern contain '/' to change and delete pattern.
+sed 's/<[^>]*>//' <file_name>           # delete first '<' to '>' if contains anythings
+sed 's/<[^>]*>//g' filr_name>           #delete all contains anythings between '<' and '>'
+sed 's/^ *//'                           # delete tabspace from first
+sed 's/^ *//g'                          # delete tabspace '\t' from every where
+sed 's/<.*>//'                           # delete all < between > 
+sed 's/<a>//g'                          # delete all < between> all file
+sed 's/a.x//'                           # delete first a.x form string and file
+sed 's/a.x//g'                          # delete all a.x from string and file
+sed 's/a.x/ban/'                        # change a.x into ban in starting
+sed 's/[a-z]*.x//g'                     # delete all character before .x all file
+sed 's/sand.*,//g'                     # delete all word starting with sand in all file
+sed 's/sand.[a-z]*,//g'               # delete all word with sand and contain word [a-z] and than ,
+sed 's/sand.[a-z]*//g'                 # delete all word with sand and contain word [a-z]
+sed -n '/title/p '                     # to search title  in file
+sed -n '/title/p '                     # to search title  in file
+ 

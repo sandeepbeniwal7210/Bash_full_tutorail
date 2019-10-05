@@ -1,0 +1,136 @@
+yum-config-manager --enable epel		#when epel not in yum repolist
+
+
+ans create a aws key file and pest key and also permission 640
+ and also create a inventory_file and paste instance ip and also add other server
+ ex- [testServer]
+172.31.42.230
+172.31.45.106
+172.31.33.163
+172.31.41.158
+[testGroup]
+kunika
+facebook
+
+install ansible from --> https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+
+
+ ansible --inventory=172.31.12.15, -u ec2-user -m ping all				 											# -m module
+ ansible -i inventory_file -u ec2-user -m ping all	
+ ansible all -i inventory_file -u ec2-user -m command -a "df -h" -b													# -b become,run as sudo/root user 
+ ansible all -i inventory_file -u ec2-user -m command -a "useradd auto-user" -b
+ ansible all -i inventory_file --list-hosts
+ ansible testGroup -i inventory_file --list-hosts
+ ansible all --list-hosts																							# create ansible.cfg in current dir, put inventory = path to file
+ ansible testServer -m ping																							# ansible.cfg --> remote_user = ec2-use  r
+
+ ###also create a ansible.cfg in current directory and add path in file
+ [defaults]
+ inventory = inventory_file
+ private_key_file = aws_key_file
+ remote_user = ec2-user
+ 
+
+ ansible testServer -m copy -a "src=/home/sandeep/sandeep.txt dest=/tmp/"											#file transfer 
+ ansible all -m command -a "ls -l /tmp"	
+ ansible all -m file -a "dest=/tmp/sandeep.txt mode=777 owner=auto-user group=root" -b 								# to change perm
+ ansible all -m file -a "dest=/tmp/sandeep.txt state=absent" -b														# delete file
+ ansible testServer -m yum -a "name=httpd state=latest"  -b  														#installed
+  
+{ installed
+latest				# install or update to latest
+present }
+
+remove and absent  	
+
+ ansible testServer -m service -a "name=httpd state=started" -b
+ ansible all -m shell -a "ps -aux | grep httpd" -b																	# to search service
+ ansible testServer -m service -a "name=httpd state=stopped" -b
+ ansible testServer -m yum -a "name=httpd state=absent" -b
+ ansible testServer -m setup > setup.txt
+ 
+ 
+ https://docs.ansible.com/ansible/latest/modules/yum_module.html              										  #ansible docs
+ ansible all --inventory=172.31.25.185,  --extra-vars "ansible_user=stephen ansible_password=igbim123" -m ping 
+ 
+ 
+ [root@ip-172-31-28-41 sandeep]# cat httpd.yml
+---
+- name: install and configure httpd
+  hosts: testServer
+  remote_user: ec2-user
+  become: yes
+
+  tasks:
+  - name: install httpd
+    yum: name=httpd state=latest
+	notify: restart httpd
+
+  handlers:
+  - name: restart httpd
+    service: name=httpd state=restarted
+
+
+	
+ ansible-playbook -i inventory_file httpd.yml				# install and store
+ 
+ansible-playbook -i inventory_file httpd.yml --extra-vars "hosts=testservers"
+
+
+##some other exaples
+  ansible localhost -m ping
+   26  ansible localhost -m yum -a "name=httpd state=latest"
+   27  ansible localhost -m yum -a "name=httpd state=latest" -b
+   28  ansible localhost -u ec2-user -m yum -a "name=httpd state=latest" -b
+
+    ansible --inventory=172.31.21.155, --extra-var "ansible_user=kunika ansible_password=kunika12" -m ping
+   42  ansible --inventory=172.31.21.155, --extra-vars "ansible_user=kunika ansible_password=kunika12" -m ping
+   43  ansible --inventory=172.31.21.155, --extra-vars "ansible_user=kunika ansible_password=kunika12" -m ping all
+   44  ansible --inventory=172.31.21.155, --extra-var "ansible_user=kunika ansible_password=kunika12" -m command -a "df -h"
+   45  ansible --inventory=172.31.21.155, --extra-var "ansible_user=kunika ansible_password=kunika12" -m command -a "df -h" all
+   46  ansible -i inventory_file  --extra-var "ansible_user=kunika ansible_password=kunika12" -m command -a "df -h" all
+   47  ansible -i inventory_file  --extra-var "ansible_user=kunika ansible_password=kunika12" -m command -a "df -h" testServer
+   
+ 
+
+ [mysqld]
+datadir=/var/lib/mysql
+socket=/var/lib/mysql/mysql.sock
+user=mysql
+# Disabling symbolic link is recommended to prevent assorted security risks
+symbolic-links=0
+port={{ mysql_port }}
+# value from the variable defined in the vars section of playbook
+
+[mysqld_safe]
+log-error=/var/log/mysqld.log
+pid-file=/var/run/mariadb/mysqld.pid
+
+########mariadb yml ########
+---
+- name: install and config mariadb
+  hosts: all
+  remote_user: ec2-user
+  become: yes
+
+  vars:
+    mysql_port: 3306
+
+  tasks:
+  - name: install mariadb
+    yum: name=mariadb-server state=latest
+
+  - name: configure mysql
+    template: src=my.cnf.j2 dest=/etc/my.cnf
+    notify: restart mariadb
+
+  - name: mariadb log file
+    file: path=/var/log/mysqld.log state=touch owner=mysql group=mysql mode=0775
+
+  - name: start mariadb
+    service: name=mariadb state=started enabled=yes
+
+  handlers:
+  - name: restart mariadb
+    service: name=mariadb state=restarted
+   

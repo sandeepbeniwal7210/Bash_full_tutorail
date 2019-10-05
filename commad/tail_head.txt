@@ -1,0 +1,12 @@
+tail -n1						#cut last line
+tail -n2 						#cut 2nd last line
+tail -c8                        #cut last 8 character 
+
+
+
+
+
+
+head -n1						#cut first line from start
+head -n3						#cut third line from start
+head -c8						#cut first 8 character

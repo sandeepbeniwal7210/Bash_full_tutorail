@@ -1,0 +1,23 @@
+###types of to run an bash script
+
+1-bash file_name								#Run bash script
+2-sh file_name									#Run bash also script
+3-./ file_name									#Run bash also script
+4- .space file_name								#Run bash also script
+5- source file_name								#Run as source for current bash script
+###A command add in bash script
+
+vim sandeep					#Create a file
+chmod +x sandeep			#Gave execute permission
+mv sandeep /bin				#move the file in '/bin' directory by root user and then runing
+
+###bash script run in another bash script
+
+run any script with "source" command and it will be run as a source to other script
+
+###file:-1 abc
+echo this is abc
+A=30
+###file:-2 xyz
+echo this is xyz
+echo $A

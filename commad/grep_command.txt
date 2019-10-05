@@ -1,0 +1,25 @@
+grep apple fruit.txt	#To search apple
+grep apple fruit.txt	#To search apple
+grep -i apple fruit.txt 	#case insensitive
+grep -n apple fruit.txt 	#apple with line number
+grep -c apple fruit.txt		#count apple
+grep -w apple fruit.txt		#only apple search
+grep -v apple fruit.txt		#anything else apple
+
+grep 'a..le' fruit.txt		#search start with a and last is le
+grep 'ap[ap]le fruit.txt	#search ap after any from a&p then le
+grep 'a$' fruit.txt			#search last word are a
+grep '^a' fruit.txt			#start with a
+
+
+grep -A3 apple fruit.txt	#next 3 word after apple
+grep -B3 apple fruit.txt	#3 word before apple 
+grep -c3 apple fruit.txt	#3 word before and after apple
+
+
+grep -R apple				#apple return file name
+grep -Rn apple				#apple with file name and line number
+grep -Rl apple				#return only file name
+grep -RL apple 				#return everything,file name those not contain apple
+grep -Rh apple				#suppress file name
+grep -Rc apple 				#count apple with file name

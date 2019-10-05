@@ -1,0 +1,7 @@
+#hard link
+inode == file-data
+mylink <-- file-data ---> myfile.txt
+two file names for one data
+=========================
+soft/symbolic link 
+shortcut to file name ---> file-name ----> inode
